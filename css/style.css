@@ -121,7 +121,7 @@ p {
     /* outline: 2px solid red; */
     top: 150px;
     left: 600px;
-    z-index: 99;
+    z-index: 1;
 }
 .about_me_img .about_me_back_box {
     position: absolute;

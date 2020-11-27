@@ -39,3 +39,16 @@ function fnMove(seq){
     $('html, body').animate({scrollTop : offset.top},400);
 }
 
+// 네비게이션 요소진입 시 글자색상 변경 
+$(document).ready(function(){
+    $(window).scroll(function(){
+      var scroll = $(window).scrollTop();
+      console.log(scroll)
+      if (scroll > 900) {
+        $(".logo_txt > a, .depth1 > li > a").css("color" , "orange",);
+      }
+      else{
+        $(".logo_txt > a, .depth1 > li > a").css("color" , "#fff");
+      }
+    })
+  })
