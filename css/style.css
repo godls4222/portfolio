@@ -333,6 +333,7 @@ p {
     top: 25px; left: 750px;
     background: #000;
 }
+/* .works_menu1 */
 .works_ctn .works_menu1 {
     position: absolute;
     left: 50%; transform: translateX(-50%);
@@ -353,15 +354,20 @@ p {
     color: #e6ab46;
 }
 /* works contents */
-.works_cts li {
+.website {
     position: relative;
-    outline: 2px solid red;
-    float: left;
+    width: 1192px; height: 300px;
+}
+.website > li {
+    position: relative;
+    /* outline: 2px solid red; */
     width: 384px; height: 300px;
     background: #ccc;
+    float: left;
     margin-right: 20px;
     margin-bottom: 20px;
     top: 100px;
+    overflow: hidden;
     /* outline: 2px solid red; */
 }
 .works_cts > ul > li:nth-child(3) {
