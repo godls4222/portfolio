@@ -333,26 +333,29 @@ p {
     top: 25px; left: 750px;
     background: #000;
 }
-.works_ctn .works_menu {
+.works_ctn .works_menu1 {
     position: absolute;
     left: 50%; transform: translateX(-50%);
     text-align: center;
     top: 60px;
 }
-.works_ctn .works_menu li {
+.works_ctn .works_menu1 li {
     display: inline;
     font-family: 'Merriweather Sans', sans-serif;
 }
-.works_ctn .works_menu li:not(:last-child) {
+.works_ctn .works_menu1 li:not(:last-child) {
     margin-right: 10px;
 }
-.works_ctn .works_menu li > a {
+.works_ctn .works_menu1 li > a {
     color: #000;
 }
-
+.works_menu1 > nav li > a:hover {
+    color: #e6ab46;
+}
 /* works contents */
-.works_cts > ul > li {
+.works_cts li {
     position: relative;
+    outline: 2px solid red;
     float: left;
     width: 384px; height: 300px;
     background: #ccc;

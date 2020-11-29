@@ -45,7 +45,7 @@ $(document).ready(function(){
       var scroll = $(window).scrollTop();
       console.log(scroll)
       if (scroll > 900) {
-        $(".logo_txt > a, .depth1 > li > a").css("color" , "orange",);
+        $(".logo_txt > a, .depth1 > li > a").css("color" , "#000",);
       }
       else{
         $(".logo_txt > a, .depth1 > li > a").css("color" , "#fff");
