@@ -53,8 +53,8 @@
             <p><strong>정해인.</strong></p>
             <p>더조은 아카데미:웹표준 기반 UI/UX 엔지니어링 콘텐츠 전문가
                 <br>양성 과정 수료</p>
-            <p>cambly 영어 화상채팅 수업54시간 이수</p>
-            <p>국토대장정 완주</p>
+            <!-- <p>cambly 영어 화상채팅 수업54시간 이수</p>
+            <p>국토대장정 완주</p> -->
         </div>
         <div class="about_me_img">
             <div class="about_me_photo"></div>
@@ -101,20 +101,18 @@
                 <h1>works</h1>
                 <div class="r_line"></div>
             </div>
-
-            <!-- works menu1 -->
+            <nav class="nav">
+                <ul class="tabs">
+                    <li class="tab-link current" data-tab="tab-1"><a>Website</a> |</li>
+                    <li class="tab-link" data-tab="tab-2"><a>Graphic & poster</a> |</li>
+                    <li class="tab-link" data-tab="tab-3"><a>Icon</a> |</li>
+                    <li class="tab-link" data-tab="tab-4"><a>Main banner</a> |</li>
+                    <li class="tab-link" data-tab="tab-5"><a>Mobile</a></li>
+                </ul>
+            </nav>
+            <!-- works menu -->
             <div class="container">
-                <nav>
-                    <ul class="tabs">
-                        <li class="tab-link current" data-tab="tab-1"><a>Website</a> |</li>
-                        <li class="tab-link" data-tab="tab-2"><a>Graphic & poster</a> |</li>
-                        <li class="tab-link" data-tab="tab-3"><a>Icon</a> |</li>
-                        <li class="tab-link" data-tab="tab-4"><a>Main banner</a> |</li>
-                        <li class="tab-link" data-tab="tab-5"><a>Mobile</a></li>
-                    </ul>
-                </nav>
-            <div id="tab-1" class="tab_content crrent">
-                <div class="works_cts">
+                <div id="tab-1" class="tab_content current">
                     <ul class="website">
                         <li>
                             <a href="https://godls4222.github.io/coffe_brand_homepage_renewal/" target="blank">
@@ -134,9 +132,7 @@
                         </li>
                     </ul>
                 </div>
-            </div>
-            <div id="tab-2" class="tab_content">
-                <div class="works_cts">
+                <div id="tab-2" class="tab_content">
                     <ul class="website">
                         <li>
                             <a href="https://godls4222.github.io/coffe_brand_homepage_renewal/" target="blank">
@@ -156,9 +152,7 @@
                         </li>
                     </ul>
                 </div>
-            </div>
-            <div id="tab-3" class="tab_content">
-                <div class="works_cts">
+                <div id="tab-3" class="tab_content">
                     <ul class="website">
                         <li>
                             <a href="https://godls4222.github.io/coffe_brand_homepage_renewal/" target="blank">
@@ -178,9 +172,7 @@
                         </li>
                     </ul>
                 </div>
-            </div>
-            <div id="tab-4" class="tab_content">
-                <div class="works_cts">
+                <div id="tab-4" class="tab_content">
                     <ul class="website">
                         <li>
                             <a href="https://godls4222.github.io/coffe_brand_homepage_renewal/" target="blank">
@@ -200,9 +192,7 @@
                         </li>
                     </ul>
                 </div>
-            </div>
-            <div id="tab-5" class="tab_content">
-                <div class="works_cts">
+                <div id="tab-5" class="tab_content">
                     <ul class="website">
                         <li>
                             <a href="https://godls4222.github.io/coffe_brand_homepage_renewal/" target="blank">
@@ -223,9 +213,6 @@
                     </ul>
                 </div>
             </div>
-            <div class="works_cts">
-
-            </div>
         </div>
     </section>
 
@@ -243,6 +230,22 @@
         </div>
     </section>
     <script src="./js/main.js"></script>
+    <script>
+        $(document).ready(function(){
+
+            $('ul.tabs > li').click(function(){
+                var tab_id = $(this).attr('data-tab');
+
+                $('ul.tabs > li').removeClass('current');
+                $('.tab_content').removeClass('current');
+
+                $(this).addClass('current');
+                $("#" + tab_id).addClass('current');
+                console.log(tab_id);
+            })
+
+        })
+    </script>
 </body>
 
 </html>

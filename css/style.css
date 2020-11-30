@@ -309,7 +309,7 @@ p {
 /* works */
 #works {
     position: relative;
-    width: 1200px; height: 768px;
+    width: 1200px; /* height: 768px; */
     margin: 0 auto;
     top: 250px;
 }
@@ -333,57 +333,67 @@ p {
     top: 25px; left: 750px;
     background: #000;
 }
-/* .works_menu1 */
-
-/* b.works_ctn .works_menu1 {
-    position: absolute;
-    left: 50%; transform: translateX(-50%);
-    text-align: center;
-    top: 60px;
-} */
-.container > nav {
-    position: absolute;
-    left: 50%; transform: translateX(-50%);
-    top: 70px;
+.container {
+    width: 1200px;
 }
-.container > nav  li {
-    display: inline;
+
+/* tap menu */
+ul.tabs > li.current {
+    color: #E6AB46;
+}
+ul.tabs > li {
+    background: none;
+    color: #000;
+    display: inline-block;
     font-family: 'Merriweather Sans', sans-serif;
+    cursor: pointer;
+}
+
+/* nav */
+.tabs {
+    position: relative;
+    width: 430px;
+    /* left: 50%; transform: translateX(-50%); */
+    margin: 0 auto;
+    top: 30px;
     /* outline: 2px solid red; */
 }
-.works_ctn #tab-1 li:not(:last-child) {
-    margin-right: 10px;
-}
-.works_ctn #tab-1 li > a {
-    color: #000;
-}
-#tab-1 > nav li > a:hover {
-    color: #e6ab46;
-}
+
 /* works contents */
 .website {
     position: relative;
-    width: 1192px; height: 300px;
+    width: 1195px; /* height: 300px; */
+    top: 70px;
+    /* outline: 2px solid red; */
+    overflow: hidden;
 }
 .website > li {
-    position: relative;
+    /* position: relative; */
     /* outline: 2px solid red; */
-    width: 384px; height: 300px;
-    background: #ccc;
+    width: 385px; /* height: 300px; */
+    background:none;
     float: left;
     margin-right: 20px;
     margin-bottom: 20px;
-    top: 100px;
-    overflow: hidden;
+    /* overflow: hidden; */
     /* outline: 2px solid red; */
 }
-.works_cts > ul > li:nth-child(3) {
+.website > li:nth-child(3) {
     margin-right: 0;
 }
-.works_cts > ul > li:nth-child(6) {
+.website > li:nth-child(6) {
     margin-right: 0;
 }
-
+.website p {
+    color: #000;
+    text-align: center;
+}
+.tab_content {
+    display: none;
+}
+.tab_content.current {
+    display: block;
+}
 /* contact */
 #contact {
     position: relative;
